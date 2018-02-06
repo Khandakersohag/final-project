@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Unique Collection</title>
+    <!-- xzoom styles and js -->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/xzoom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/xzoom.css" media="all"/>
+    <!-- xzoom style and js -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- owl carousel css -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!-- owl theme css -->
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+    <!-- animate css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- rating css -->
+    <link rel="stylesheet" type="text/css" href="css/simple-rating.css">
+    <link rel="stylesheet" type="text/css" href="css/magnify.css">
+    <!-- custom css styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <!-- top nav starts -->
+   <div class="primary-color" id="top-nav">
+       <div class="container" id="top-section">
+           <nav class="navbar navbar-expand-sm navbar-default">
+            <a href="web/index.html"><button type="button" class="btn btn-outline-success animated bounce infinite" mdbRippleRadius>Hot Item</button></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+            <ul class="navbar-nav white-text">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#myModal" role="button" data-toggle="modal">Login<span class="sr-only">(current)</span></a>
+                </li>
+                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container py-5 bg-success" id="myModalLabel">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center white-text mb-4">Customer Login  Form</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <span class="anchor" id="formLogin"></span>
+
+                    <!-- form card login -->
+                    <div class="card rounded-0">
+                        <div class="card-header">
+                            <h3 class="mb-0">Login</h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="form" role="form" autocomplete="off" id="formLogin">
+                                <div class="form-group">
+                                    <label for="uname1">Username</label>
+                                    <input type="text" class="form-control form-control-lg rounded-0" name="uname1" id="uname1" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control form-control-lg rounded-0" id="pwd1" required="" autocomplete="new-password">
+                                </div>
+                                <div>
+                                    <label class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description small">Remember me on this computer</span>
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-success btn-lg float-right">Login</button>
+                            </form>
+                        </div>
+                        <!--/card-block-->
+                    </div>
+                    <!-- /form card login -->
+
+                </div>
+
+
+            </div>
+            <!--/row-->
+
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myModal" role="button" data-toggle="modal">Registar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="web/index.html">Customer Care</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="web/index.html">Track Order</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+       </div>
+       <div class="container-fluid bg-primary" id="sticky-nav">
+<div class="container">
+    <div class="header primary-color">
+    <nav class="navbar pt-0 pb-0 navbar-expand-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand p-0 mr-5" href="#"><img src="img/logo2.png"></a>
+            <div class="float-left"> <a href="#" class="button-left"><span class="fa fa-fw fa-bars "></span></a> </div>
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown pt-2 px-2 white-text hoverable"><a href="men.catagory.html">Men</a></li>
+                <li class="nav-item dropdown pt-2 px-2 white-text hoverable"><a href="women.html">Women</a></li>
+                <li class="nav-item dropdown pt-2 px-2 white-text hoverable"><a href="baby.catagory.html">Baby And Kids</a></li>
+                <li class="nav-item dropdown pt-2 px-2 white-text hoverable"><a href="women.catagory.html"> Health Product</a></li>
+                <li class="nav-item dropdown pt-2 px-2 white-text hoverable"><a href="women.html">offer Zone</a></li>
+                <li class="nav-item dropdown messages-menu">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-bell-o"></i>
+                    <span class="label label-success bg-success">10</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <ul class="dropdown-menu-over list-unstyled">
+                      <li class="header-ul text-center">You have 4 messages</li>
+                      <li>
+                        <!-- inner menu: contains the actual data -->
+                        <ul class="menu list-unstyled">
+                          <li><!-- start message -->
+                          <a href="#">
+                            <div class="pull-left">
+                              <img src="http://via.placeholder.com/160x160" class="rounded-circle  " alt="User Image">
+                            </div>
+                            <h4>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                        <!-- end message -->
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                            </div>
+                            <h4>
+                            AdminLTE Design Team
+                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                            </div>
+                            <h4>
+                            Developers
+                            <small><i class="fa fa-clock-o"></i> Today</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                            </div>
+                            <h4>
+                            Sales Department
+                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                            </div>
+                            <h4>
+                            Reviewers
+                            <small><i class="fa fa-clock-o"></i> 2 days</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="footer-ul text-center"><a href="#">See All Messages</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown notifications-menu">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-warning bg-warning">10</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <ul class="dropdown-menu-over list-unstyled">
+                    <li class="header-ul text-center">You have 10 notifications</li>
+                    <li>
+                      <!-- inner menu: contains the actual data -->
+                      <ul class="menu list-unstyled">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                            page and may cause design problems
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-users text-red"></i> 5 new members joined
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-user text-red"></i> You changed your username
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="footer-ul text-center"><a href="#">View all</a></li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li class="nav-item dropdown  user-menu">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+</div>
+</div>
+      </header>
+
+    <div class="container wow fadeInUp">
+        <div class="row" id="menu-breadcrumb">
+            <div class="col-md-12">
+                <div class="bc-icons-2">
+                    <ol class="breadcrumb white border">
+                        <li class="breadcrumb-item"><a class="black-text" href="index.html">Home</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                        <li class="breadcrumb-item"><a class="black-text" href="men.html">Men</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                        <li class="breadcrumb-item"><a class="black-text" href="men.catagory.html">Cloths</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                        <li class="breadcrumb-item active">Products Details</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- prodict deatils starts -->
+
+    <div class="container pb-4" id="product-details">
+        <div class="row">
+            <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="d-none d-sm-block p-2 border example hoverable">
+                    <section id="default" class="padding-top0">
+    
+            <div class="xzoom-container">
+          <img class="xzoom img-fluid" id="xzoom-default" src="images/gallery/preview/01_b_car.jpg" xoriginal="images/gallery/original/01_b_car.jpg" />
+    
+  </div>
+    </section>
+                </div>
+                <div class="d-block d-sm-none">
+                    <img src="images/gallery/preview/m-h-4.jpg" alt="man with hoodies" class="img-fluid">
+                </div>
+                <div class="border mt-1 text-center example hoverable p-2">
+                    <a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Select For Next"><i class="fa fa-heart-o" aria-hidden="true"></i> <strong>Wishlist</strong>
+                    </a>
+                </div>
+                <div class="wow fadeInDown hoverable view hm-zoom" data-wow-delay="1.5s">
+                    <a href="offer.html">
+                    <img src="img/offer/offer-1.jpg" alt="an add of veet" class="img-fluid mt-2">
+                </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 hoverable wow fadeInLeft" data-wow-delay="0.5s">
+                <h5 class="text-secondary">Carhartt Men's Midweight Zip Front Hooded Sweatshirt  K122
+                </h5>
+                <h4 class="price d-inline">US <i class="fa fa-usd" aria-hidden="true"></i>18.5
+                </h4>
+                <p class="d-inline"><mark><del>US <i class="fa fa-usd" aria-hidden="true"></i>25.5</del></mark>
+                </p>
+                <p class="d-inline p-2 m-2 offer hoverable">30&#37; off</p>
+                <p class="text-warning border-bottom">Hurry Only 8 left!</p>
+                <!-- rating satrts -->
+                <div class="row">
+                    <div class="col-md-5 c0l-sm-12">
+                        <div class="d-inline">
+                            <div class="rating" id="rating">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.3
+                        </span>
+                        <p>Reviews This Product</p>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <h6 class="text-justify text-danger hoverable pl-2"><i class="fa fa-money fa-2x" aria-hidden="true"></i>
+                        10 Days Money Back Gurantee
+                        </h6>
+                        <h6 class="text-justify text-primary hoverable pl-2"><i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+                        Free Delivery
+                        </h6>
+                    </div>
+                </div>
+
+                <!-- rating ends -->
+                <p> 
+                    <h4>Product Description</h4>
+                    <ul>
+                        <li>Hawkins AV Club Hoodie / Hooded Sweatshirt - Super Awesome and High Quality - Printed in the USA</li>
+                        <li>50/50 Blend - Super Soft and Comfy</li>
+                        <li> Unisex Fit (Typically Runs Large for Women)</li>
+                        <li>Makes a Great Gift!</li>
+                        <li>Hawkins Middle School A.V. CLUB Screen Printed Design - The Ultimate Hoodie !!!</li>
+                    </ul>
+                </p> <!--description end -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <p class="text-primary">
+                        Select Size:
+                        </p>
+                        <div class="input-group mb-3 z-depth-1 hoverable">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="product-size">Sizes</label>
+                            </div>
+                            <select class="custom-select" id="product-size">
+                                <option selected>Choose...</option>
+                                <option value="1">Small</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Large</option>
+                                <option value="4">X-large</option>
+                                <option value="5">XX-Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <p class="text-primary">
+                        Select Quantity:
+                        </p>
+                        <input type="number" name="" class="border rounded">
+                    </div>
+                </div>
+                <p class="text-primary mt-4"><strong>Choice A Color:</strong>
+                </p>
+                <div class="mb-3">
+                    <span class="bg-primary px-2 border hoverable"></span>
+                    <span class="bg-success px-2 border hoverable"></span>
+                    <span class="bg-info px-2 border hoverable"></span>
+                    <span class="bg-danger px-2 border hoverable"></span>
+                    <span class="bg-warning px-2 border hoverable"></span>
+                    <span class="bg-light px-2 border hoverable"></span>
+                    <span class="bg-white px-2 border hoverable"></span>
+                    <span class="bg-grey px-2 border hoverable"></span>
+                    <span class="bg-dark px-2 border hoverable"></span>
+                    <span class="bg-secondary px-2 border hoverable"></span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div>
+                    <p class="text-primary">
+                    Share:
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook-square z-depth-1 hoverable" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter-square z-depth-1 hoverable" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.googleplus.com"><i class="fa fa-google-plus-square z-depth-1 hoverable" aria-hidden="true"></i>
+                    </a>
+                    </p>
+                </div>
+                <div class="border p-2 customer-option hoverable wow fadeInLeft" data-wow-delay="0.9s">
+                    <span>
+                        <input type="checkbox" name="shipping" value="ok">
+                        Yes, I want FREE Shipping
+                    </span>
+                    <a href="mcart.html">
+                        <button type="button" class="btn btn-light-green">Add To Cart <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </button>
+                    </a>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="m-1 text-bold" for="country-list"><strong>Shipping To:</strong>
+                            </label>
+                        </div>
+                        <div class="z-depth-1 hoverable">
+                            <select class="custom-select border" id="country-list">
+                                <option value="AFG">Afghanistan</option>
+                                <option value="ALA">Åland Islands</option>
+                                <option value="ALB">Albania</option>
+                                <option value="DZA">Algeria</option>
+                                <option value="ASM">American Samoa</option>
+                                <option value="AND">Andorra</option>
+                                <option value="AGO">Angola</option>
+                                <option value="AIA">Anguilla</option>
+                                <option value="ATA">Antarctica</option>
+                                <option value="ATG">Antigua and Barbuda</option>
+                                <option value="ARG">Argentina</option>
+                                <option value="ARM">Armenia</option>
+                                <option value="ABW">Aruba</option>
+                                <option value="AUS">Australia</option>
+                                <option value="AUT">Austria</option>
+                                <option value="AZE">Azerbaijan</option>
+                                <option value="BHS">Bahamas</option>
+                                <option value="BHR">Bahrain</option>
+                                <option value="BGD">Bangladesh</option>
+                                <option value="BRB">Barbados</option>
+                                <option value="BLR">Belarus</option>
+                                <option value="BEL">Belgium</option>
+                                <option value="BLZ">Belize</option>
+                                <option value="BEN">Benin</option>
+                                <option value="BMU">Bermuda</option>
+                                <option value="BTN">Bhutan</option>
+                                <option value="BOL">Bolivia, Plurinational State of</option>
+                                <option value="BES">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BIH">Bosnia and Herzegovina</option>
+                                <option value="BWA">Botswana</option>
+                                <option value="BVT">Bouvet Island</option>
+                                <option value="BRA">Brazil</option>
+                                <option value="IOT">British Indian Ocean Territory</option>
+                                <option value="BRN">Brunei Darussalam</option>
+                                <option value="BGR">Bulgaria</option>
+                                <option value="BFA">Burkina Faso</option>
+                                <option value="BDI">Burundi</option>
+                                <option value="KHM">Cambodia</option>
+                                <option value="CMR">Cameroon</option>
+                                <option value="CAN">Canada</option>
+                                <option value="CPV">Cape Verde</option>
+                                <option value="CYM">Cayman Islands</option>
+                                <option value="CAF">Central African Republic</option>
+                                <option value="TCD">Chad</option>
+                                <option value="CHL">Chile</option>
+                                <option value="CHN">China</option>
+                                <option value="CXR">Christmas Island</option>
+                                <option value="CCK">Cocos (Keeling) Islands</option>
+                                <option value="COL">Colombia</option>
+                                <option value="COM">Comoros</option>
+                                <option value="COG">Congo</option>
+                                <option value="COD">Congo, the Democratic Republic of the</option>
+                                <option value="COK">Cook Islands</option>
+                                <option value="CRI">Costa Rica</option>
+                                <option value="CIV">Côte d'Ivoire</option>
+                                <option value="HRV">Croatia</option>
+                                <option value="CUB">Cuba</option>
+                                <option value="CUW">Curaçao</option>
+                                <option value="CYP">Cyprus</option>
+                                <option value="CZE">Czech Republic</option>
+                                <option value="DNK">Denmark</option>
+                                <option value="DJI">Djibouti</option>
+                                <option value="DMA">Dominica</option>
+                                <option value="DOM">Dominican Republic</option>
+                                <option value="ECU">Ecuador</option>
+                                <option value="EGY">Egypt</option>
+                                <option value="SLV">El Salvador</option>
+                                <option value="GNQ">Equatorial Guinea</option>
+                                <option value="ERI">Eritrea</option>
+                                <option value="EST">Estonia</option>
+                                <option value="ETH">Ethiopia</option>
+                                <option value="FLK">Falkland Islands (Malvinas)</option>
+                                <option value="FRO">Faroe Islands</option>
+                                <option value="FJI">Fiji</option>
+                                <option value="FIN">Finland</option>
+                                <option value="FRA">France</option>
+                                <option value="GUF">French Guiana</option>
+                                <option value="PYF">French Polynesia</option>
+                                <option value="ATF">French Southern Territories</option>
+                                <option value="GAB">Gabon</option>
+                                <option value="GMB">Gambia</option>
+                                <option value="GEO">Georgia</option>
+                                <option value="DEU">Germany</option>
+                                <option value="GHA">Ghana</option>
+                                <option value="GIB">Gibraltar</option>
+                                <option value="GRC">Greece</option>
+                                <option value="GRL">Greenland</option>
+                                <option value="GRD">Grenada</option>
+                                <option value="GLP">Guadeloupe</option>
+                                <option value="GUM">Guam</option>
+                                <option value="GTM">Guatemala</option>
+                                <option value="GGY">Guernsey</option>
+                                <option value="GIN">Guinea</option>
+                                <option value="GNB">Guinea-Bissau</option>
+                                <option value="GUY">Guyana</option>
+                                <option value="HTI">Haiti</option>
+                                <option value="HMD">Heard Island and McDonald Islands</option>
+                                <option value="VAT">Holy See (Vatican City State)</option>
+                                <option value="HND">Honduras</option>
+                                <option value="HKG">Hong Kong</option>
+                                <option value="HUN">Hungary</option>
+                                <option value="ISL">Iceland</option>
+                                <option value="IND">India</option>
+                                <option value="IDN">Indonesia</option>
+                                <option value="IRN">Iran, Islamic Republic of</option>
+                                <option value="IRQ">Iraq</option>
+                                <option value="IRL">Ireland</option>
+                                <option value="IMN">Isle of Man</option>
+                                <option value="ISR">Israel</option>
+                                <option value="ITA">Italy</option>
+                                <option value="JAM">Jamaica</option>
+                                <option value="JPN">Japan</option>
+                                <option value="JEY">Jersey</option>
+                                <option value="JOR">Jordan</option>
+                                <option value="KAZ">Kazakhstan</option>
+                                <option value="KEN">Kenya</option>
+                                <option value="KIR">Kiribati</option>
+                                <option value="PRK">Korea, Democratic People's Republic of</option>
+                                <option value="KOR">Korea, Republic of</option>
+                                <option value="KWT">Kuwait</option>
+                                <option value="KGZ">Kyrgyzstan</option>
+                                <option value="LAO">Lao People's Democratic Republic</option>
+                                <option value="LVA">Latvia</option>
+                                <option value="LBN">Lebanon</option>
+                                <option value="LSO">Lesotho</option>
+                                <option value="LBR">Liberia</option>
+                                <option value="LBY">Libya</option>
+                                <option value="LIE">Liechtenstein</option>
+                                <option value="LTU">Lithuania</option>
+                                <option value="LUX">Luxembourg</option>
+                                <option value="MAC">Macao</option>
+                                <option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+                                <option value="MDG">Madagascar</option>
+                                <option value="MWI">Malawi</option>
+                                <option value="MYS">Malaysia</option>
+                                <option value="MDV">Maldives</option>
+                                <option value="MLI">Mali</option>
+                                <option value="MLT">Malta</option>
+                                <option value="MHL">Marshall Islands</option>
+                                <option value="MTQ">Martinique</option>
+                                <option value="MRT">Mauritania</option>
+                                <option value="MUS">Mauritius</option>
+                                <option value="MYT">Mayotte</option>
+                                <option value="MEX">Mexico</option>
+                                <option value="FSM">Micronesia, Federated States of</option>
+                                <option value="MDA">Moldova, Republic of</option>
+                                <option value="MCO">Monaco</option>
+                                <option value="MNG">Mongolia</option>
+                                <option value="MNE">Montenegro</option>
+                                <option value="MSR">Montserrat</option>
+                                <option value="MAR">Morocco</option>
+                                <option value="MOZ">Mozambique</option>
+                                <option value="MMR">Myanmar</option>
+                                <option value="NAM">Namibia</option>
+                                <option value="NRU">Nauru</option>
+                                <option value="NPL">Nepal</option>
+                                <option value="NLD">Netherlands</option>
+                                <option value="NCL">New Caledonia</option>
+                                <option value="NZL">New Zealand</option>
+                                <option value="NIC">Nicaragua</option>
+                                <option value="NER">Niger</option>
+                                <option value="NGA">Nigeria</option>
+                                <option value="NIU">Niue</option>
+                                <option value="NFK">Norfolk Island</option>
+                                <option value="MNP">Northern Mariana Islands</option>
+                                <option value="NOR">Norway</option>
+                                <option value="OMN">Oman</option>
+                                <option value="PAK">Pakistan</option>
+                                <option value="PLW">Palau</option>
+                                <option value="PSE">Palestinian Territory, Occupied</option>
+                                <option value="PAN">Panama</option>
+                                <option value="PNG">Papua New Guinea</option>
+                                <option value="PRY">Paraguay</option>
+                                <option value="PER">Peru</option>
+                                <option value="PHL">Philippines</option>
+                                <option value="PCN">Pitcairn</option>
+                                <option value="POL">Poland</option>
+                                <option value="PRT">Portugal</option>
+                                <option value="PRI">Puerto Rico</option>
+                                <option value="QAT">Qatar</option>
+                                <option value="REU">Réunion</option>
+                                <option value="ROU">Romania</option>
+                                <option value="RUS">Russian Federation</option>
+                                <option value="RWA">Rwanda</option>
+                                <option value="BLM">Saint Barthélemy</option>
+                                <option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>
+                                <option value="KNA">Saint Kitts and Nevis</option>
+                                <option value="LCA">Saint Lucia</option>
+                                <option value="MAF">Saint Martin (French part)</option>
+                                <option value="SPM">Saint Pierre and Miquelon</option>
+                                <option value="VCT">Saint Vincent and the Grenadines</option>
+                                <option value="WSM">Samoa</option>
+                                <option value="SMR">San Marino</option>
+                                <option value="STP">Sao Tome and Principe</option>
+                                <option value="SAU">Saudi Arabia</option>
+                                <option value="SEN">Senegal</option>
+                                <option value="SRB">Serbia</option>
+                                <option value="SYC">Seychelles</option>
+                                <option value="SLE">Sierra Leone</option>
+                                <option value="SGP">Singapore</option>
+                                <option value="SXM">Sint Maarten (Dutch part)</option>
+                                <option value="SVK">Slovakia</option>
+                                <option value="SVN">Slovenia</option>
+                                <option value="SLB">Solomon Islands</option>
+                                <option value="SOM">Somalia</option>
+                                <option value="ZAF">South Africa</option>
+                                <option value="SGS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SSD">South Sudan</option>
+                                <option value="ESP">Spain</option>
+                                <option value="LKA">Sri Lanka</option>
+                                <option value="SDN">Sudan</option>
+                                <option value="SUR">Suriname</option>
+                                <option value="SJM">Svalbard and Jan Mayen</option>
+                                <option value="SWZ">Swaziland</option>
+                                <option value="SWE">Sweden</option>
+                                <option value="CHE">Switzerland</option>
+                                <option value="SYR">Syrian Arab Republic</option>
+                                <option value="TWN">Taiwan, Province of China</option>
+                                <option value="TJK">Tajikistan</option>
+                                <option value="TZA">Tanzania, United Republic of</option>
+                                <option value="THA">Thailand</option>
+                                <option value="TLS">Timor-Leste</option>
+                                <option value="TGO">Togo</option>
+                                <option value="TKL">Tokelau</option>
+                                <option value="TON">Tonga</option>
+                                <option value="TTO">Trinidad and Tobago</option>
+                                <option value="TUN">Tunisia</option>
+                                <option value="TUR">Turkey</option>
+                                <option value="TKM">Turkmenistan</option>
+                                <option value="TCA">Turks and Caicos Islands</option>
+                                <option value="TUV">Tuvalu</option>
+                                <option value="UGA">Uganda</option>
+                                <option value="UKR">Ukraine</option>
+                                <option value="ARE">United Arab Emirates</option>
+                                <option value="GBR">United Kingdom</option>
+                                <option value="USA">United States</option>
+                                <option value="UMI">United States Minor Outlying Islands</option>
+                                <option value="URY">Uruguay</option>
+                                <option value="UZB">Uzbekistan</option>
+                                <option value="VUT">Vanuatu</option>
+                                <option value="VEN">Venezuela, Bolivarian Republic of</option>
+                                <option value="VNM">Viet Nam</option>
+                                <option value="VGB">Virgin Islands, British</option>
+                                <option value="VIR">Virgin Islands, U.S.</option>
+                                <option value="WLF">Wallis and Futuna</option>
+                                <option value="ESH">Western Sahara</option>
+                                <option value="YEM">Yemen</option>
+                                <option value="ZMB">Zambia</option>
+                                <option value="ZWE">Zimbabwe</option>
+                            </select>
+                        </div>
+                    </div><!--country option end-->
+                    <div>
+                        <p><span class="text-bold">Payment Methods:</span><br>    
+                        Cash/Card on delivery
+                        /Online payment
+                        </p>
+                        <p class="text-success"><i class="fa fa-lock" aria-hidden="true"></i>
+                            <strong>Payment Security Guarenteed</strong>
+                        </p>
+                        <p class="text-primary">
+                            <i class="fa fa-cc-paypal fa-2x  hoverable z-depth-1" aria-hidden="true"></i>
+                            <i class="fa fa-cc-visa fa-2x hoverable z-depth-1" aria-hidden="true"></i>
+                            <i class="fa fa-credit-card fa-2x hoverable z-depth-1" aria-hidden="true"></i>
+                            <i class="fa fa-cc-mastercard fa-2x hoverable z-depth-1" aria-hidden="true"></i>
+                            <i class="fa fa-cc-amex fa-2x hoverable z-depth-1" aria-hidden="true"></i>
+                            <i class="fa fa-cc-discover fa-2x hoverable z-depth-1" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                    <div class="checkout">
+                        <a href="checkout.html">
+                            <button type="button" class="btn btn-light-green check-out">Buy Now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--products details end-->
+      <!-- page scrol button -->
+<div class="fixed-action-btn smooth-scroll hoverable">
+    <a href="#top-section" class="btn-floating btn-lg">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+<!--page scroll button  --> 
+    <!-- related products section starts -->
+     <section id="related-product" class="border-top mt-4">
+            <div class="container">
+                    <p class="text-bold text-primary h5 p-3">Related Products:</p>
+                    <!-- carousel starts -->
+                    <div class="wow fadeInRight" data-wow-delay="0.5s">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                <div class="carousel-item col-md-3 active">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="img/Men/Clothings/m-jk-1.jpg" alt="slide 1">
+                                        </a>
+                                        <p class="h5 text-primary">Flying Machine Slim Men's Blue Jeans</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.2
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="img/Men/Clothings/m-p-1.jpg" alt="slide 2">
+                                        </a>
+                                        <p class="h5 text-primary">Highlander Men's Checkered C, Maroon Shirt</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.5
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="img/Men/Clothings/m-sw-1.jpg" alt="slide 3">
+                                        </a>
+                                        <p class="h5 text-primary">Flying Machine Slim Men's Blue Jeans</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.1
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                    <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="img/Men/Clothings/m-h-1.jpg" alt="slide 4">
+                                        </a>
+                                        <p class="h5 text-primary">Highlander Men's Checkered, Maroon Shirt</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.6
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                  <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="img/Men/Clothings/m-swim-1.jpg" alt="slide 5">
+                                        </a>
+                                        <p class="h5 text-primary">Flying Machine Slim Men's Blue Jeans</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.4
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="img/Men/Clothings/m-uw-1.jpg" alt="slide 6">
+                                        </a>
+                                        <p class="h5 text-primary">Highlander Men's Checkered, Maroon Shirt</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.0
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="img/Men/Clothings/m-s-2.jpg" alt="slide 7">
+                                        </a>
+                                        <p class="h5 text-primary">Flying Machine Slim Men's Blue Jeans</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.1
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                 <div class="carousel-item col-md-3  ">
+                                    <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="img/Men/Clothings/m-p-3.jpg" alt="slide 8">
+                                        </a>
+                                        <p class="h5 text-primary">Highlander Men's Checkered, Maroon Shirt</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.3
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- carosel ends -->
+                </div>
+     </section>
+    <!-- related products section ensd -->
+
+    <!-- Also like section start -->
+    <section id="also-like" class="border-top mt-4">
+            <div class="container">
+                    <p class="text-bold text-primary h5 p-3">You May Also Like:</p>
+                    <!-- carousel starts -->
+                    <div class="wow fadeInLeft" data-wow-delay="0.5s">
+                        <div id="alsolike" class="carousel slide" data-ride="carousel" data-interval="3000">
+                            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                <div class="carousel-item col-md-3 active">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="img/Health And Beauty/Hair Care/hb-hc-cl-3.jpg" alt="slide 1">
+                                        </a>
+                                        <p class="h5 text-primary">Flying Machine Slim Men's Blue Jeans</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.2
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="img/Health And Beauty/Hair Care/hb-hc-sp-3.jpg" alt="slide 2">
+                                        </a>
+                                        <p class="h5 text-primary">Highlander Men's Checkered, Maroon Shirt</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.5
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="img/Baby And kids/Toys/b-blk-1.jpg" alt="slide 3">
+                                        </a>
+                                        <p class="h5 text-primary">Flying Machine Slim Men's Blue Jeans</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.1
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                    <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="img/Baby And kids/Toys/b-et-4.jpg" alt="slide 4">
+                                        </a>
+                                        <p class="h5 text-primary">Highlander Men's Checkered, Maroon Shirt</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.6
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                  <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="img/Baby And kids/Toys/b-bt-1.jpg" alt="slide 5">
+                                        </a>
+                                        <p class="h5 text-primary">Flying Machine Slim Men's Blue Jeans</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.4
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="img/Baby and Kids/Car Seats/b-con-1.jpg" alt="slide 6">
+                                        </a>
+                                        <p class="h5 text-primary">Highlander Men's Checkered, Maroon Shirt</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.0
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-md-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="img/Women/Shoes/w-ath-2.jpg" alt="slide 7">
+                                        </a>
+                                        <p class="h5 text-primary">Flying Machine Slim Men's Blue Jeans</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.1
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                 <div class="carousel-item col-md-3  ">
+                                    <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="products.details.html" title="WonderFul Dress" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="img/Women/Clothing/sk-1.jpg" alt="slide 8">
+                                        </a>
+                                        <p class="h5 text-primary">Highlander Men's Checkered, Maroon Shirt</p>
+                                        <div>
+                                            <div class="d-inline">
+                                                <div class="rating" id="rating">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-success z-depth-1-half"><i class="fa fa-star" aria-hidden="true"></i>4.3
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- carosel ends -->
+                </div>
+     </section>
+    <!-- Also like section ends -->
+    <!-- Recently Viewd -->
+    <div class="my-4 border-top border-bottom">
+    <div class="container">
+        <p class="h5 text-primary mt-4">Recently Viewd:</p>
+        <div class="row">
+            <div class="col-md-2 col-sm-12 no-gutters">
+                <a href="offer.html">
+                   <img src="img/offer/offer-9.jpg" class="img-fluid">
+                </a>
+                <a href="offer.html">
+                   <img src="img/offer/offer-8.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-10 col-sm-12">
+               <div class="no-gutters owl-carousel owl-theme">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="card example hoverable z-depth-5">
+                            <div class="view hm-zoom">
+                                <img class="img-fluid" src="img/Men/Shoes/m-lo-2.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="m.clothings.details.html">Under Armour Men's Shirt</a>
+                                </h4>
+                                <p class="card-text text-center"><strong><i class="fa fa-usd" aria-hidden="true"></i>18.99</strong> 
+                                </p>
+                                <a href="mcart.html"><button type="button" class="btn btn-outline-secondary waves-effect">Add <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                </a>
+                                <a href="m.clothings.details.html"><button type="button" class="btn btn-outline-secondary waves-effect">Details <i class="fa fa-info" aria-hidden="true"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="card example hoverable z-depth-5">
+                            <div class="view hm-zoom">
+                                <img class="img-fluid" src="img/Men/Acessories/m-wa-3.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="m.shoes.details.html">ASICS Men's GEL Shoe</a>
+                                </h4>
+                                <p class="card-text text-center"><strong><i class="fa fa-usd" aria-hidden="true"></i>38.99</strong> 
+                                </p>
+                                <a href="mcart.html"><button type="button" class="btn btn-outline-secondary waves-effect">Add <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                </a>
+                                <a href="m.shoes.details.html"><button type="button" class="btn btn-outline-secondary waves-effect">Details <i class="fa fa-info" aria-hidden="true"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInLeft" data-wow-delay="0.9s">
+                        <div class="card example hoverable z-depth-5">
+                            <div class="view hm-zoom">
+                                <img class="img-fluid" src="img/Women/Watches/w-sw-4.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="m.watches.details.html">Men'Sport Watch Black</a>
+                                </h4>
+                                <p class="card-text text-center"><strong><i class="fa fa-usd" aria-hidden="true"></i>21.99</strong> 
+                                </p>
+                                <a href="mcart.html"><button type="button" class="btn btn-outline-secondary waves-effect">Add <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                </a>
+                                <a href="m.watches.details.html"><button type="button" class="btn btn-outline-secondary waves-effect">Details <i class="fa fa-info" aria-hidden="true"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInLeft" data-wow-delay="1.2s">
+                        <div class="card example hoverable z-depth-5">
+                            <div class="view hm-zoom">
+                                <img class="img-fluid" src="img/Men/Acessories/m-sg-1.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="m.acessories.details.html">Duduma P Fashion</a>
+                                </h4>
+                                <p class="card-text text-center"><strong><i class="fa fa-usd" aria-hidden="true"></i>21.95</strong> 
+                                </p>
+                                <a href="mcart"><button type="button" class="btn btn-outline-secondary waves-effect">Add <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                </a>
+                                <a href="m.acessories.details.html"><button type="button" class="btn btn-outline-secondary waves-effect">Details <i class="fa fa-info" aria-hidden="true"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInLeft" data-wow-delay="1.2s">
+                        <div class="card example hoverable z-depth-5">
+                            <div class="view hm-zoom">
+                                <img class="img-fluid" src="img/Baby And Kids/Clothing/b-jk-1.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="m.clothings.details.html">Armour Men's Shirt</a>
+                                </h4>
+                                <p class="card-text text-center"><strong><i class="fa fa-usd" aria-hidden="true"></i>54.99</strong> 
+                                </p>
+                                <a href="mcart"><button type="button" class="btn btn-outline-secondary waves-effect">Add <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                </a>
+                                <a href="m.clothings.details.html"><button type="button" class="btn btn-outline-secondary waves-effect">Details <i class="fa fa-info" aria-hidden="true"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInLeft" data-wow-delay="1.2s">
+                        <div class="card example hoverable z-depth-5">
+                            <div class="view hm-zoom">
+                                <img class="img-fluid" src="img/Baby And Kids/Toys/b-bl-3.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="m.shoes.details.html"> Men's Nike Boots</a>
+                                </h4>
+                                <p class="card-text text-center"><strong><i class="fa fa-usd" aria-hidden="true"></i>50.00</strong> 
+                                </p>
+                                <a href="mcart"><button type="button" class="btn btn-outline-secondary waves-effect">Add <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                </a>
+                                <a href="m.shoes.details.html"><button type="button" class="btn btn-outline-secondary waves-effect">Details <i class="fa fa-info" aria-hidden="true"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInLeft" data-wow-delay="1.2s">
+                        <div class="card example hoverable z-depth-5">
+                            <div class="view hm-zoom">
+                                <img class="img-fluid" src="img/Baby And Kids/Clothing/b-sw-3.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="m.watches.details.html">W800H-1AV Classic Sport </a>
+                                </h4>
+                                <p class="card-text text-center"><strong><i class="fa fa-usd" aria-hidden="true"></i>70.99</strong> 
+                                </p>
+                                <a href="mcart"><button type="button" class="btn btn-outline-secondary waves-effect">Add <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                </a>
+                                <a href="m.watches.details.html"><button type="button" class="btn btn-outline-secondary waves-effect">Details <i class="fa fa-info" aria-hidden="true"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- kjfhlk -->
+<!-- footer section Start     -->
+    <footer class="primary-color-dark">
+     <div class="container-fluid" id="footer-container-fluid">
+                <div class="container">
+                    <!-- for footer container -->
+                    <div class="row">
+                        <div class="col-lg-2  col-md-6 col-sm-12 col-xs-12">
+                            <ul>
+                                 <li class="title">Catagories</li>
+                                 <li> <a href="men.catagory.html"></a>Men</li>
+                                 <li> <a href="women.html">Women</a> </li>
+                                <li> <a href="baby.catagory.html">Baby and Kids</a> </li>
+                                    <li> <a href="health.catagory.html">Health And Beauty</a> </li>
+                                    <li> <a href="web/index.htm">Offer Zone</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                                     
+                                     <ul>
+                                        <li class="title"> Support Center</li>
+                                        <li> <a href="web/index.html"> Chat With us</a> </li>
+                                        <li> <a href="web/index.html"> Email Us </a> </li>
+                                        <li> <a href="web/index.html"> Our Web </a> </li>
+                                        <li> <a href="web/index.html"> SerVice </a> </li>
+                                    </ul> 
+                                </div>
+                                <div class="col-lg-2  col-md-6 col-sm-12 col-xs-12">
+                                    <ul>
+                                    <li class="title"> Services </li>
+                                        <li> <a href="web/index.html"> Carreer </a> </li>
+                                        <li> <a href="web/index.html"> Sell With Us </a> </li>
+                                        <li> <a href="web/index.html"> Factory </a> </li>
+                                        <li> <a href="web/index.html"> our Showroom </a> </li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="col-lg-2  col-md-6 col-sm-12 col-xs-12">
+                                    <ul>
+                                        <li class="title"> Find us on </li><br>
+                                        <li> <a href="#"><button class="w3-button w3-circle w3-light-grey"> <i class="fa fa-facebook" aria-hidden="true"></i> </button></a> </li><br>
+                                        <li> <a href="#"><button class="w3-button w3-circle w3-light-grey"> <i class="fa fa-twitter" aria-hidden="true"></i></button></a> </li><br>
+                                        <li> <a href="#"><button class="w3-button w3-circle w3-light-grey"> <i class="fa fa-linkedin" aria-hidden="true"></i> </button></a> </li><br>
+ 
+                                    </ul> 
+                                    
+                                </div>
+                                <div class="col-lg-3  col-md-6 col-sm-12 col-xs-12">
+                                    <ul>                                        
+                                    <li class="address"> +(63) 2452 82763</li> 
+                                    <li class="address"> @uniqcollection.com.bd </li> 
+                                    <li class="address"> uniqcollection@gmail.com </li> 
+                                    </ul> 
+                                    <ul>                                        
+                                    <li class="address"> 5th Block Makati, #403</li> 
+                                    <li class="address"> Bangladesh </li> 
+                                    <li class="address"> Dhaka 1209 </li> 
+                                    </ul> 
+                                    <hr>
+                                </div>
+                            </div>
+                </div>     
+            </div>
+            
+                    <div class="container-fluid" id="sub-footer-container-fluid">
+                        <div class="my-5 text-center">
+            <!-- Copyright removal is not prohibited! -->
+            <p class="mb-2"><small>COPYRIGHT © 2017. ALL RIGHTS RESERVED. UniqueCollection TEMPLATE BY <a href="https://www.facebook.com/PampangaStateAgriU/">Xender-Web-65</a></small></p>
+
+               <small>
+                <a  class="m-2">DEVELOPERS</a>
+     
+            </small>
+
+            <small>
+                <a href="https://www.facebook.com/khandakersohag"  target="_blank" class="m-2 black-text">@Khandaker Sohag</a>
+                <a href="https://www.facebook.com/dungcajustin"  target="_blank" class="m-2 black-text">@Enjamul Islam</a>
+                <a href="https://www.facebook.com/Miserable.Vanilla"  target="_blank" class="m-2 black-text">@Jakaria</a>
+                <a href="https://www.facebook.com/Miserable.Vanilla"  target="_blank" class="m-2 black-text">@Sakhawat</a>
+            </small>
+            <!-- Copyright removal is not prohibited! -->
+            </div>
+            </div>
+            <!-- footer section ends -->
+</footer>
+
+<!-- kjhldohfg -->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
+    <!-- maigrate js -->
+    <!-- <script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script> -->
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- owl carousel js -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- animate js -->
+    <script type="text/javascript" src="js/animate-js.js"></script>
+    <!-- simple rating js -->
+    <script type="text/javascript" src="js/simple-rating.js"></script>
+    <!-- smooth scrol -->
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+    <!-- wow js -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.magnify.js"></script> -->
+    <!-- image zoom -->
+    <!-- zoom -->
+    <script type="text/javascript" src="js/setup.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
